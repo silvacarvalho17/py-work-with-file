@@ -23,8 +23,8 @@ def create_report(
     result = supply - buy
 
     with open(report_file_name, "w") as report_file:
-        report_file.write(
-            f"supply,{supply}\n"
-            f"buy,{buy}\n"
-            f"result,{result}"
-        )
+    report_file.write(
+        f"supply,{supply}\n"
+        f"buy,{buy}\n"
+        f"result,{result}\n"
+    )
