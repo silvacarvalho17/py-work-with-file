@@ -17,14 +17,12 @@ def create_report(
             if operation == "supply":
                 supply += int(amount)
 
-            if operation == "buy":
+            elif operation == "buy":
                 buy += int(amount)
 
     result = supply - buy
 
     with open(report_file_name, "w") as report_file:
-    report_file.write(
-        f"supply,{supply}\n"
-        f"buy,{buy}\n"
-        f"result,{result}\n"
-    )
+        report_file.write(f"supply,{supply}\n")
+        report_file.write(f"buy,{buy}\n")
+        report_file.write(f"result,{result}\n")
